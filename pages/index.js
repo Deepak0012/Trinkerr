@@ -29,7 +29,7 @@ export default function Home() {
         </div>
         <div className="main-text-holder">
           <p className="firstText">Welcome to the future of investing</p>
-          <h1><div className="firstH">India's First</div><br />
+          <h1><div className="firstH">{"India's First"}</div><br />
             Social Trading Platform</h1>
           <p className="secondText">New to trading? No idea where to invest? Find the top traders, observe their movements in the market and invest the smart way to make your money grow.</p>
           <div className="input-holder">

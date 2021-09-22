@@ -1,16 +1,246 @@
-html,
-body {
+@font-face {
+  font-family: "EBGaramond";
+  src: url("/fonts/EBGaramond/EBGaramond-Regular.ttf");
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+body{
+  margin: 0px;
+  color: white;
+  font-family: system-ui;
+}
+p{
+  margin: 0px;
+}
+.body-main{
+  background-image: url("../public/mesh-gradient.jpeg");
+  height: 900px;
+}
+.footer{
+  height: 400px;
+  background-color: #131419;
+  padding: 90px 90px;
+}
+.navbar{
+  height: 74px;
+}
+ul {
+  list-style-type: none;
+  margin: 0px 40px 0px 60px;
   padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  
+  overflow: hidden;
 }
-
-a {
-  color: inherit;
+ul img{
+  margin-right: -190px;
+  margin-top: 4px;
+}
+li {
+  float: right;
+}
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 26px 30px;
   text-decoration: none;
+  /* font-family: Roboto; */
+  font-style: normal; 
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 22px;
+}
+li a:hover:not(.active) {
+  background-color: #111;
+}
+ul :last-child{
+  float: left;
+}
+.main-text-holder{
+  width: 45%;
+  margin: 140px 703px 87px 91px;
+}
+.main-text-holder .firstText{
+  font-style: normal;
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 24px;
+  letter-spacing: -1.6px;
+  color: #6166DC;
+}
+.main-text-holder h1{
+  font-style: normal;
+  font-weight: 800;
+  font-size: 60px;
+  line-height: 64px;
+  letter-spacing: -1.5px;
+  color: white;
+}
+.main-text-holder .firstH{
+  display: inline-block;
+  -webkit-text-fill-color: transparent;
+  background: -webkit-linear-gradient(10deg, rgb(197, 97, 255), rgb(7, 221, 245)) ;
+  -webkit-background-clip: text;
+  background-clip: text;
+  background-repeat: repeat;
+}
+.main-text-holder .secondText{
+font-size: 20px;
+line-height: 32px;
+letter-spacing: -0.4px;
+color: #D9D9D9;
+margin-top: 45px;
+}
+.input-holder{
+  margin-top: 78px;
+}
+.input-holder input{
+ width: 306px;
+ height: 57px;
+ background: #FFFFFF;
+ border: 3px solid #333333;
+ padding-left: 5px;
+ font-size: 20px;
+ box-sizing: border-box;
+ border-radius: 8px 0px 0px 8px;
+ text-indent: 10px;
+}
+.input-holder button{
+  width: 190px;
+  height: 57px;
+  background: #FFFFFF;
+  cursor: pointer;
+  font-size: 20px;
+  border-radius: 0px 8px 8px 0px;
+  padding: 0px 32px;
+  box-shadow: inset -2px 0px 0px #333333, inset 0px 2px 0px #333333, inset 0px -2px 0px #333333;
+}
+.main-text-holder .thirdText{
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 32px;
+  letter-spacing: -0.4px;
+  color: #FFFFFF;
+  margin-top: 39px;
+}
+.brokers-holder{
+  width: 60%;
+  margin-top: 10px;
+}
+.brokers-holder img{
+  width: 11%;
+  margin-left: 15px;
+  margin-right: 5px;
+}
+.firstBox, .secondBox, .thirdBox{
+  float: left;
+  height: 20px;
+  width: 33%;
+  font-size: 12px;
+}
+.footer-holder{
+  width: 100%;
+  margin-top: 50px;
+}
+.firstCol, .secondCol{
+  float: left;
+  height: 200px;
+  width: 33%;
+  font-size: 12px;
+}
+.thirdCol{
+  float: right;
+  height: 200px;
+  width: 33%;
+  text-align: right;
+ }
+.footer-holder p{
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: -0.004em;
+  color: #D9D9D9;
+  margin-bottom: 8px;
+}
+.boldText{
+  font-weight: 600;
+  margin-bottom: 16px !important;
+}
+.thirdCol a{
+  margin-left: 10px;
 }
 
-* {
-  box-sizing: border-box;
+.navbar-mob{
+  display: none;
+}
+/* Media Queries */
+@media only screen and (max-width: 767px){
+.main-text-holder{
+  margin: 70px 25px 40px 25px;
+  width: auto;
+}
+.footer-holder{
+  display: flex;
+  width: auto;
+}
+.navbar{
+  display: none;
+}
+.navbar-mob{
+  display: block;
+  margin-left: 25px;
+}
+.navbar-mob svg{
+  margin-top: 10px;
+  margin-right: 50%;
+}
+.firstText{
+  font-size:22px !important;
+}
+.main-text-holder h1{
+  margin-top: 40px;
+  font-size:38px;
+  line-height: 42px;
+}
+.secondText{
+  font-size: 16px !important;
+  line-height: 23px !important;
+}
+.input-holder input, .input-holder button{
+  font-size: 14px;
+  width: 45%;
+  height: 40px;
+  padding: 0px 10px;
+}
+.thirdText{
+  font-size: 12px !important;
+}
+.brokers-holder{
+  width: 80%;
+}
+.brokers-holder {
+  height: 10px;
+}
+.footer-holder p{
+  font-size: 15px;
+  line-height: 24px;
+  margin-bottom: 2px;
+}
+.footer{
+  padding: 25px;
+}
+.thirdCol a{
+  margin-left: 8px;
+}
+.firstCol{
+  width:40%
+} .secondCol{
+  width: 30%;
+} .thirdCol{
+  width: 30%;
+}
+.body-main{
+  margin-bottom: -150px;
+}
+
 }
